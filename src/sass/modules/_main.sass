@@ -1,0 +1,57 @@
+.main-port
+	+setka(1/2, 1/2)
+	.tema
+		h2
+			font:
+				family: "CircularStd-Bold", sans-serif
+				weight: normal
+				style: normal
+			font-size: 35px
+			text-align: center
+			margin: 90px 0
+	.main-text
+		margin-bottom: 100px
+		h2
+			font:
+				family: "CircularStd-Bold", sans-serif
+				weight: normal
+				style: normal
+			text-align: center
+			text-transform: capitalize
+			margin-bottom: 20px
+			font-size: 35px
+		p
+			font:
+				family: "CircularStd-Book", sans-serif
+				weight: normal
+				style: normal
+			margin-bottom: 20px
+			text-align: justify
+			font-size: 20px
+			line-height: 30px
+			padding: 20px 20px 20px 50px
+	.kartinka01
+		// border: 1px solid red
+		overflow: hidden
+		width: 400px
+		margin: 0 auto
+		// height: 800px
+		// background: url(../image/41427_popUpThumb.jpg) no-repeat
+		// background-position: center center
+		// background-size: contain
+		border-radius: 50%
+		display: flex
+		flex-flow: row nowrap
+		justify-content: center
+		margin-bottom: 100px
+		.kartinka-img
+			transform: scale(1)
+			transition-duration: 0.2s
+		&:hover
+			// filter: hue-rotate(90deg)
+			.kartinka-img
+				transform: scale(1.2)
++media(480px)
+	.row:nth-child(2n+1)
+		display: flex
+		flex-flow: row-reverse

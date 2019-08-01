@@ -1,15 +1,29 @@
-.header
+header.header#block1
 	.container
 		.header-head
 			.header-logo
-				a(href="#") Sunam Clean
+				h1
+					a(href="#") Sunam Clean
 			nav.header-nav
-				ul
-					li 
-						a(href="#").nav-li-a Home
-					li 
-						a(href="#").nav-li-a Process
-					li 
-						a(href="#").nav-li-a Services
-					li 
-						a(href="#").nav-li-a Blog
+				.hamburger.hamburger--collapse
+					.hamburger-box
+						.hamburger-inner
+				.nav
+					ul
+						li 
+							a(href="#block1").nav-li-a <span class="icon-home black"></span> Home
+						li 
+							a(href="#block2").nav-li-a <span class="icon-hammer black"></span> Наши услуги
+						li 
+							a(href="#block3").nav-li-a <span class="icon-pacman black"></span> Отзывы о нас
+						li 
+							a(href="#").nav-li-a <span class="icon-phone black"></span> заказать
+		.header-text
+			h2.h2 We build Intelligent Enterprise Software
+			p.p.
+				We are a technology company that understands 
+				 of businesses, and with our technical 
+				expertise, we help them transform and scale
+			.btn
+				a(href="#block2") read more
+
