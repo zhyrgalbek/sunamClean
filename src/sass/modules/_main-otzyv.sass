@@ -1,0 +1,134 @@
+.main-otzyv
+	.zag
+		h2
+			font:
+				family: "CircularStd-Bold", sans-serif
+				weight: normal
+				style: normal
+			text-align: center
+			text-transform: capitalize
+			margin-bottom: 20px
+			font-size: 35px
+			margin: 70px  0 30px 0
+	.owl-carousel
+		width: 100%
+		margin: 0 auto
+		.owl-nav
+			// border: 1px solid red
+			position: absolute
+			width: 100%
+			top: 35%
+			left: 50%
+			transform: translate(-50%, -50%)
+			%border
+				border: 2px solid #0063ff
+				position: absolute
+				display: block
+				border-radius: 0
+				width: 45px
+				height: 45px
+			%strelka
+				content: ""
+				position: absolute
+				display: block
+				width: 17px
+				height: 3px
+				background: blue
+			.owl-prev
+				left: 0%
+				@extend %border
+				&:after
+					@extend %strelka
+					top: 30%
+					right: 9%
+					transform: rotate(-35deg) translate(-50%, -50%)
+				&:before
+					@extend %strelka
+					bottom: 17%
+					right: 12%
+					transform: rotate(35deg) translate(-50%, -50%)
+				+media(800px)
+					left: 10%
+			.owl-next
+				right: 0%
+				&:after
+					@extend %strelka
+					top: 50%
+					right: 9%
+					transform: rotate(35deg) translate(-50%, -50%)
+				&:before
+					@extend %strelka
+					bottom: 45%
+					right: 6%
+					transform: rotate(-35deg) translate(-50%, -50%)
+				@extend %border
+				+media(800px)
+					right: 10%
+		.owl-dots
+			margin-top: 0px
+			margin-bottom: 50px
+		.item
+			// border: 1px solid red
+			// min-height: 600px	
+			position: relative
+			padding: 20px
+			padding-bottom: 80px
+			overflow: hidden
+			.item-otzyv
+				border: 1px solid #ececec
+				max-width: 600px
+				margin: 0 auto
+				height: 100%
+				border-top-left-radius: 80px
+				border-bottom-right-radius: 80px
+				box-shadow: 5px 10px 40px -10px
+				position: relative
+				padding-bottom: 170px
+				// overflow: hidden
+				.text
+					font:
+						family: "CircularStd-Book", sans-serif
+						weight: normal
+						style: normal
+					text-align: justify
+					padding: 35px
+					font-size: 18px
+					line-height: 30px
+					+media(480px)
+						padding: 55px
+				.person
+					// border: 1px solid red
+					position: absolute
+					left: 0
+					bottom: -10%
+					display: flex
+					flex-flow: column-reverse nowrap
+					+media(480px)
+						flex-flow: row nowrap
+						justify-content: flex-start
+						align-items: flex-start
+						left: 10%
+						// width: 500px
+				.foto
+					// border: 1px solid red
+					width: 204px
+					height: 198px
+					margin-left: 15px
+					// transform: translateY(-0%)
+					border-top-left-radius: 50px
+					border-bottom-right-radius: 50px
+					overflow: hidden
+					img
+						margin-top: 100px
+						margin-left: 40px
+						transform: scale(2)
+				.family
+					// border: 1px solid red
+					padding-left: 35px
+					padding-bottom: 10px
+					+media(480px)
+						text-align: left
+					.name, .firstName
+						font-size: 18px
+						font-weight: 600
+						line-height: 30px
