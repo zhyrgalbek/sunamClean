@@ -1,13 +1,13 @@
 /* font converted using font-converter.net. thank you! */
 @font-face {
   font-family: "CircularStd-BookItalic";
-  src: url("./fonts/CircularStd-BookItalic.eot"); /* IE9 Compat Modes */
-  src: url("./fonts/CircularStd-BookItalic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("./fonts/CircularStd-BookItalic.otf") format("opentype"), /* Open Type Font */
-    url("./fonts/CircularStd-BookItalic.svg") format("svg"), /* Legacy iOS */
-    url("./fonts/CircularStd-BookItalic.ttf") format("truetype"), /* Safari, Android, iOS */
-    url("./fonts/CircularStd-BookItalic.woff") format("woff"), /* Modern Browsers */
-    url("./fonts/CircularStd-BookItalic.woff2") format("woff2"); /* Modern Browsers */
+  src: url("../fonts/CircularStd-BookItalic/fonts/CircularStd-BookItalic.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/CircularStd-BookItalic/fonts/CircularStd-BookItalic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/CircularStd-BookItalic/fonts/CircularStd-BookItalic.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/CircularStd-BookItalic/fonts/CircularStd-BookItalic.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/CircularStd-BookItalic/fonts/CircularStd-BookItalic.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/CircularStd-BookItalic/fonts/CircularStd-BookItalic.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/CircularStd-BookItalic/fonts/CircularStd-BookItalic.woff2") format("woff2"); /* Modern Browsers */
   font-weight: normal;
   font-style: normal;
 }
