@@ -40,7 +40,7 @@ gulp.task("fonts", function(){
 
 
 gulp.task("imagemin", function(){
-	return gulp.src("./src/img/*")
+	return gulp.src("./src/image/*")
 		.pipe(imagemin([
 			imagemin.gifsicle({interlaced: true}),
 			imagemin.jpegtran({progressive: true}),
