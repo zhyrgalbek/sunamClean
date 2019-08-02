@@ -70,9 +70,6 @@
 						padding: 10px 20px
 						// background: blue
 						transition-duration: 0.2s
-					&:hover
-						a
-							background: #000
 		.left
 			left: 0px
 	.header-text
@@ -126,24 +123,35 @@
 				&:hover
 					background: #000
 +media(480px)
-	.header 
+	.header
+		// perspective: 500px
 		.header-head
-			justify-content: space-between
+			// perspective: 500px
 		.header-nav 
 			width: 500px
 			height: 50px
 			// border: 1px solid red
+			display: flex
+			justify-content: flex-end
 			.nav
-				position: static
+				position: absolute
+				top: 90px
+				left: 0
 				width: 100%
-				transform: translateY(0)
-				background: transparent
+				transition-duration: 0.2s
+				// transform: translateY(0)
+				// transform: translateX(-50%)
+				// transform: translateX(-50%) rotateX(-83deg)
+				background: blue
 				display: flex
-				// align-items: center
+				justify-content: center
 				padding: 0
-				height: inherit
-				overflow: visible
-				// border: 1px solid green
+				height: 0
+				overflow: hidden
+				border-top-right-radius: 0
+				border-bottom-left-radius: 100px
+				// border: 1px solid red
+				// transform: rotateX(-130deg)
 				ul
 					display: flex
 					flex-flow: row nowrap
@@ -151,20 +159,31 @@
 					align-items: center
 					li
 						// border: 1px solid green
+						text-align: center
 						a
 							background: transparent
+							display: inline-block
 							padding: 10px 20px
 							border-radius: 30px
-							// width: 100%	
-							// border: 1px solid red
+							&:hover
+								background: red
+			.height
+				height: 50px
+			.rotate
+				transform: translateX(-50%) rotateX(0)
 +media(800px)
 	.hamburger
 		display: none
 	.header 
-		.header-head
-			justify-content: space-between
 		.header-nav 
 			width: 800px
 			height: 50px
 			// border: 1px solid red
+			align-items: center
+			.nav
+				position: static
+				height: 50px
+				transform: translateY(0)
+				background: transparent
+
 

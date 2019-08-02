@@ -14,6 +14,9 @@ $(function(){
 	var $nav = $(".nav");
 	$hamburger.on("click", function(){
 		$(this).toggleClass("is-active");
+		// $nav.toggleClass("rotate");
+		if(w > 480)
+			$nav.toggleClass("height");
 		$nav.toggleClass("left");
 	});
 	$('.btn a').click(function(){
@@ -24,6 +27,7 @@ $(function(){
 	});
 	$('.nav ul li a[href^="#"]').click(function(){
 		var target = $(this).attr("href");
+		var tab = $(this).attr("data-tab");
 		$("html, body").animate({
 			scrollTop: $(target).offset().top-102
 		}, 1000);
