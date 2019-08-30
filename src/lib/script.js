@@ -58,5 +58,94 @@ $(function(){
 				nav: true
 			}
 		}
-	})
+	});	
+
+	var summ = [];
+	$(".calc-btn").click(function(){
+		var $text = $(this).text();
+		var operator = [];
+		var total = $(".total");
+		if($text === "C"){
+			summ.splice(0, summ.length);
+			total.html('0');
+			return false;
+		}
+		if($text === '='){
+			total.html(eval(total.html()));
+			summ.splice(0, summ.length);
+			if(total.html() === '0'){
+				return false;
+				// alert("Hello world");
+			}
+			summ.push(total.html());
+			return false;
+		}
+		if($text === "<-"){
+			summ.pop();
+			total.html(summ);
+			return false;
+			// alert("Hello world");
+		}
+		summ.push($text);	
+		total.html(summ);
+		// alert($text);
+	});
+	$("#vyvod").click(function(){
+		alert(summ);
+	});
+	var calc = (function(){
+		var divan = 0, stul = 0;
+		var itog = 0;
+		return {
+			setItog: function(){
+				itog = divan + stul; 
+			},
+			vvodDivan: function(value){
+				divan = value * 250;
+			},
+			vvodStul: function(value){
+				stul = value * 80;
+			},
+			getDivan: function(){
+				return divan;
+			},
+			getStul: function(){
+				return stul;
+			},
+			getItog: function(){
+				return itog;
+			},
+			resetItog: function(){
+				itog = 0;
+			}
+		};
+	}());
+	$("#divan").on("keyup change", function(){
+		var mesto = $(this).val();
+		var result = $("#divan-result");
+		calc.vvodDivan(mesto);
+		result.html("идет вычисление....");
+		setInterval(function(){
+			result.html("C Вас " + calc.getDivan() + " сом");
+		}, 2000);
+	});
+	$("#stul").on("keyup change", function(){
+		var mesto = $(this).val();
+		var result = $("#stul-result");
+		calc.vvodStul(mesto);
+		result.html("идет вычисление....");
+		setInterval(function(){
+			result.html("С вас " + calc.getStul() + " сом");
+		}, 2000);
+	});
+	$(".calc-div input").on("keyup change", function(){
+		calc.setItog();
+		var itog = $("#itog");
+		itog.html("идет вычисление.....");
+		setInterval(function(){
+			itog.html("Итог: " + calc.getItog());
+		}, 2000);
+	});
+
+
 });

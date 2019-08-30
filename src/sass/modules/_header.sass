@@ -2,10 +2,22 @@
 	color: #fff
 .header
 	background: #136cf8 
-	// background: url(../image/3.jpg) no-repeat
+	background: url(../image/couch-1835923_1920.jpg) no-repeat
 	background-size: cover
+	background-position: bottom center
 	// filter: saturate(45%)
 	height: 100vh
+	position: relative
+	&:before
+		content: ""
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: rgba(0,0,0, 0.7)
+		z-index: 10
 	.header-head
 		position: absolute
 		top: 0
@@ -20,7 +32,7 @@
 		align-items: center
 	.fixed
 		position: fixed
-		background: blue
+		background: #664c96de
 	.header-logo
 		a
 			font-family: "CircularStd-Book", sans-serif
@@ -84,6 +96,7 @@
 		flex-flow: column nowrap
 		align-items: center
 		justify-content: center
+		z-index: 12
 		.h2
 			font:
 				family: "CircularStd-Bold"
@@ -166,7 +179,7 @@
 							padding: 10px 20px
 							border-radius: 30px
 							&:hover
-								background: red
+								background: rgba(0,0,0,0.8)
 			.height
 				height: 50px
 			.rotate
