@@ -40,6 +40,7 @@ $(function(){
 			$(".header-head").removeClass("fixed");
 		}
 	});
+	
 	$(".owl-carousel").owlCarousel({
 		loop: true,
 		nav: false,
@@ -59,7 +60,6 @@ $(function(){
 			}
 		}
 	});	
-
 	var summ = [];
 	$(".calc-btn").click(function(){
 		var $text = $(this).text();
@@ -93,6 +93,7 @@ $(function(){
 	$("#vyvod").click(function(){
 		alert(summ);
 	});
+	
 	var calc = (function(){
 		var divan = 0, stul = 0;
 		var itog = 0;
@@ -114,9 +115,6 @@ $(function(){
 			},
 			getItog: function(){
 				return itog;
-			},
-			resetItog: function(){
-				itog = 0;
 			}
 		};
 	}());
@@ -124,28 +122,60 @@ $(function(){
 		var mesto = $(this).val();
 		var result = $("#divan-result");
 		calc.vvodDivan(mesto);
-		result.html("идет вычисление....");
-		setInterval(function(){
-			result.html("C Вас " + calc.getDivan() + " сом");
-		}, 2000);
+		result.html("C Вас " + calc.getDivan() + " сом");
+		// result.html("идет вычисление....");
+		// setInterval(function(){
+		// 	result.html("C Вас " + calc.getDivan() + " сом");
+		// }, 2000);
 	});
 	$("#stul").on("keyup change", function(){
 		var mesto = $(this).val();
 		var result = $("#stul-result");
 		calc.vvodStul(mesto);
-		result.html("идет вычисление....");
-		setInterval(function(){
-			result.html("С вас " + calc.getStul() + " сом");
-		}, 2000);
+		result.html("С вас " + calc.getStul() + " сом");
+		// result.html("идет вычисление....");
+		// setInterval(function(){
+		// 	result.html("С вас " + calc.getStul() + " сом");
+		// }, 2000);
 	});
 	$(".calc-div input").on("keyup change", function(){
 		calc.setItog();
 		var itog = $("#itog");
-		itog.html("идет вычисление.....");
-		setInterval(function(){
-			itog.html("Итог: " + calc.getItog());
-		}, 2000);
+		itog.html("Итог: " + calc.getItog());
+		// itog.html("идет вычисление.....");
+		// setInterval(function(){
+		// 	itog.html("Итог: " + calc.getItog());
+		// }, 2000);
 	});
 
+	/// form
+	$.mask.definitions['9'] = '';
+	$.mask.definitions['d'] = '[0-9]';
+	$("#phone").mask("+996 ddd dd-dd-dd");
+	$('.form .form-div input').focus(function(){
+		$(this).removeClass('error');
+	});
+	$(".form").submit(function(){
+		$name = $(this).find('input[name="name"]').val();
+		$tel = $(this).find('input[name="phone"]').val();
+		if($name == ""){
+			$(this).find('input[name="name"]').addClass('error');
+			// $(this).find('input').val($name).addClass("error");
+			return false;
+		}
+		if($tel == ""){
+			$(this).find('input[name="phone"]').addClass("error");
+			return false;
+		}
+		$.post(
+			$(this).attr('action'), 
+			$(this).serialize()	
+		);
+		$(this).empty();
+		$(this).append('<div>Спасибо Вам перезвонят!</div>');
+		return false;
+	});
+
+	/// end form
 
 });

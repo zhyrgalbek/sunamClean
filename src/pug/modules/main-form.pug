@@ -1,12 +1,12 @@
 section.main-form#form
     .container
-        form(action="app.js" method="post").form
+        form(action="#").form
             h2 Заполните форму и мы вам перезвоним через 5 минут!
             .form-div
                 //- label(for="name") Ваше имя
-                input(type="text" id="name" name="name" placeholder="Ваше имя")
+                input(type="text" id="name" name="name" required pattern="[A-Za-zА-Яа-яЁё\s]+$" placeholder="Ваше имя" )
             .form-div
                 //- label(for="number") Ваш телефонный номер
-                input(type="phone" id="phone" name="phone" placeholder="Ваш телефон")
+                input(type="phone" id="phone" name="phone" required placeholder="Ваш телефон")
             .form-btn
                 button Перезвоните мне
