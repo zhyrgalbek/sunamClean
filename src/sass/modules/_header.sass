@@ -32,7 +32,7 @@
 		align-items: center
 	.fixed
 		position: fixed
-		background: #664c96de
+		background: $fon
 	.header-logo
 		a
 			font-family: "CircularStd-Book", sans-serif
@@ -40,7 +40,7 @@
 			font-weight: normal
 			font-size: 35px
 			line-height: 40px
-			color: #fff
+			color: $header-text
 			text-decoration: none
 	.header-nav
 		.nav
@@ -55,13 +55,19 @@
 			border-top-right-radius: 100px
 			border-bottom-right-radius: 100px
 			padding: 20px 20px 20px 0
-			background: blue
+			background: $fon
 			overflow: hidden
 			ul
 				list-style-type: none
 				width: 100%
 				margin: 0
 				padding: 0
+				#animac
+					display: flex
+					justify-content: center
+					align-items: center
+					.icon-phone
+						font-size: 22px
 				li
 					width: 100%
 					// border: 1px solid red
@@ -72,7 +78,7 @@
 						font-style: normal
 						font-weight: normal
 						font-size: 16px
-						color: #fff
+						color: $header-text
 						line-height: auto
 						// text-transform: capitalize
 						text-decoration: none
@@ -102,10 +108,10 @@
 				family: "CircularStd-Bold"
 				weight: normal
 				style: normal
-			font-size: 40px
-			line-height: 55px
+			font-size: 35px
+			line-height: 1.5
 			text-align: center
-			color: #fff
+			color: $header-text
 		.p
 			font:
 				family: "CircularStd-Book",sans-serif
@@ -122,19 +128,20 @@
 			a
 				display: inline-block
 				font-family: "CircularStd-Book", sans-serif
-				font-weight: normal
+				font-weight: 400
 				font-style: normal
 				text-decoration: none
 				font-size: 16px
 				line-height: auto
-				text-transform: capitalize
-				color: #0063ff
+				text-transform: uppercase
+				color: #f9c645
 				padding: 15px 30px
 				border-radius: 30px
-				background: #fff
+				background: #000
 				margin-top: 40px
 				&:hover
 					background: #000
+					color: #f9c645
 +media(480px)
 	.header
 		// perspective: 500px
@@ -155,7 +162,7 @@
 				// transform: translateY(0)
 				// transform: translateX(-50%)
 				// transform: translateX(-50%) rotateX(-83deg)
-				background: blue
+				// background: black
 				display: flex
 				justify-content: center
 				padding: 0
