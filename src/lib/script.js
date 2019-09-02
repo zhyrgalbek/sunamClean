@@ -175,7 +175,14 @@ $(function(){
 		$(this).append('<div>Спасибо Вам перезвонят!</div>');
 		return false;
 	});
-
+	$(".main-text").on("click", function(){
+		$(".matrase").css("display", "block");
+		// $(".wrapper").css("background","#000");
+		$(".matrase .btn").click(function(){
+			$(".matrase").css("display", "none");
+			// $(".wrapper").css("background","none");
+		})
+	});
 	/// end form
 
 });

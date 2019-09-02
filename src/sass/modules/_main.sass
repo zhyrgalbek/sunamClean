@@ -1,5 +1,8 @@
 .main-port
 	+setka(1/2, 1/3)
+	.row
+		// border: 1px solid red
+		overflow: visible
 	h2
 		font:
 			family: "CircularStd-Bold", sans-serif
@@ -9,8 +12,15 @@
 		text-align: center
 		margin: 90px 0 20px 0
 	.main-text
+		border: 1px solid #F9C645
+		padding: 20px
+		transition-duration: 0.2s
+		&:hover
+			// transform: scale(1.1)
+			border: 1px solid green
 		h3
 			padding-bottom: 30px
+			text-align: center
 			// border: 1px solid red
 	.kartinka01
 		// border: 1px solid red
@@ -42,6 +52,49 @@
 			font-size: 25px
 			color: #fff
 			line-height: 42px
+	.matrase
+		box-sizing: border-box
+		background-color: #ccc
+		border: 1px solid #c4c4c4
+		min-width: 800px
+		min-height: 500px
+		margin: 0 auto
+		padding: 0 20px
+		position: fixed
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		z-index: 100
+		display: none
+		.matrase-zag
+			margin: 20px 0
+			padding: 0
+		.matrase-tema
+			text-align: center
+		.matrase-table
+			// border: 1px solid red
+			// min-height: 300px
+			margin: 0 auto
+			.table-tr
+				// border: 1px solid green
+				// min-height: 40px
+				display: flex
+				flex-flow: row nowrap
+				justify-content: space-between
+				align-items: center
+				%tr-td
+					box-sizing: border-box
+					border: 1px solid red
+					width: 20px
+					// min-height: 40px
+					padding: 15px
+				.tr-td_one
+					@extend %tr-td
+					width: 80%
+				.tr-td_two
+					@extend %tr-td
+					border: 1px solid blue
+					width: 20%
 
 +media(480px)
 	// .row:nth-child(2n+1)
