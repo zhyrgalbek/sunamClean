@@ -176,12 +176,15 @@ $(function(){
 		return false;
 	});
 	$(".main-text").on("click", function(){
-		$(".matrase").css("display", "block");
-		// $(".wrapper").css("background","#000");
+		var tab = $(this).attr('data-tab');
+		$('.matrase#' + tab).css("display", "block");
 		$(".matrase .btn").click(function(){
 			$(".matrase").css("display", "none");
-			// $(".wrapper").css("background","none");
-		})
+		});
+	});
+	$(".matrase .matrase-content .matrase-btn").click(function(){
+		$(".main-form").addClass(".form-fixed");
+		// alert("Hello wotlf");
 	});
 	/// end form
 

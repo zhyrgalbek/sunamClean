@@ -4,41 +4,105 @@ section.main-port#block4(data-tab="port")
 			h2 Цены на химчистку мебели
 		.row
 			.col
-				.main-text
+				.main-text(data-tab="matrase-1")
 					h3 диваны
 					.kartinka01.mebel
 					.cena-cont
 						//- .cena-span
 						//- 	span.cena-mebel от 1500 сом
 			.col
-				.main-text
+				.main-text(data-tab="matrase-2")
 					h3 матрасы
 					.kartinka01.mebel
 					.cena-cont
 						//- .cena-span
 						//- 	span.cena-mebel от 1500 сом
 			.col
-				.main-text
+				.main-text(data-tab="matrase-3")
 					h3 стульи
-					.kartinka01.mebel
+					.kartinka01.stul
 					.cena-cont
 						//- .cena-span
 						//- 	span.cena-mebel от 1500 сом
-		.matrase
-			h2.matrase-zag hello world
-			h3.matrase-tema fruighruih
-			.matrase-table
-				.table-tr
-					.tr-td_one диван со спинкой
-					.tr-td_two 1200 сом
-				.table-tr
-					.tr-td_one диван со спинкой
-					.tr-td_two 1200 сом
-				.table-tr
-					.tr-td_one диван со спинкой
-					.tr-td_two 1200 сом
-				.table-tr
-					.tr-td_one диван со спинкой
-					.tr-td_two 1200 сом
-			button.btn выход
-		
+		.matrase#matrase-1
+			.matrase-content
+				h2.matrase-zag Цены на диваны
+				.matrase-modal
+					.row
+						.col
+							.matrase-icon.divan-one
+							.matrase-text.
+								двухместный диван
+								700 сом
+						.col
+							.matrase-icon.divan-two
+							.matrase-text.
+								трехместный диван 1050 сом
+						.col
+							.matrase-icon.divan-three
+							.matrase-text
+								| двухместный угловой 1200 сом
+						.col
+							.matrase-icon.divan-four
+							.matrase-text
+								| трехместный угловой 1500 сом
+						.col
+							.matrase-icon.podushka
+							.matrase-text
+								| подушка от 80 сом
+				button.btn выход
+				.matrase-btn
+					button заказать
+		.matrase#matrase-2
+			.matrase-content
+				h2.matrase-zag Цены на матрасы
+				.matrase-modal
+					.row
+						.col
+							.matrase-icon.mat-one
+							.matrase-text.
+								односпальный матрас 1000 сом
+						.col
+							.matrase-icon.mat-two
+							.matrase-text.
+								полутораспальный матрас 1250 сом
+						.col
+							.matrase-icon.mat-three
+							.matrase-text
+								| двухместный спальный 1500
+				button.btn выход
+				.matrase-btn
+					button заказать
+		.matrase#matrase-3
+			.matrase-content
+				h2.matrase-zag Цены на стульи и кресла
+				.matrase-modal
+					.row
+						.col
+							.matrase-icon.stul-one
+							.matrase-text.
+								стул с мягким сиденьем 100 сом
+						.col
+							.matrase-icon.stul-two
+							.matrase-text.
+								стул с мягкой спинкой и сиденьем 150 сом
+						.col
+							.matrase-icon.stul-three
+							.matrase-text
+								| кресло для отдыха 350 сом
+						.col
+							.matrase-icon.stul-four
+							.matrase-text
+								| кресло со спальным местом 500 сом
+						.col
+							.matrase-icon.stul-fife
+							.matrase-text
+								| кресло малое 250 сом
+				button.btn выход
+				.matrase-btn
+					button заказать
+		//- .zakaz
+		//- 	form(action="#").zakaz-form
+		//- 		input(type="text", name="name" placeholder="Антон")
+		//- 		input(type="tel" name="tel" placeholder="996555483")
+			

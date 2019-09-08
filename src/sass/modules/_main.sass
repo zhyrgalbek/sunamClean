@@ -54,49 +54,196 @@
 			line-height: 42px
 	.matrase
 		box-sizing: border-box
-		background-color: #ccc
+		background-color: rgba(0,0,0, 0.7)
 		border: 1px solid #c4c4c4
-		min-width: 800px
-		min-height: 500px
 		margin: 0 auto
-		padding: 0 20px
 		position: fixed
-		top: 50%
-		left: 50%
-		transform: translate(-50%, -50%)
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
 		z-index: 100
+		overflow-y: auto
 		display: none
+		&-content
+			width: 100%
+			background: #fcf7f7
+			// position: absolute
+			// top: 50%
+			// left: 50%
+			// transform: translate(-50%, -50%)
+			padding: 20px 10px
+			margin-top: 20px
+			position: relative
+			overflow: auto
+			.btn
+				position: absolute
+				top: 10px
+				right: 30px
+			.matrase-btn
+				text-align: center
+				padding: 10px 0
+				button
+					display: inline-block
+					padding: 10px 20px
+					border: 1px solid #ccf
+					border-radius: 5px
+					font-family: "CircularStd-Bold", sans-serif
+					font-weight: normal
+					font-style: normal
+					font-size: 18px
+					background: blue
+					color: #fff
 		.matrase-zag
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+			text-transform: capitalize
 			margin: 20px 0
 			padding: 0
 		.matrase-tema
 			text-align: center
-		.matrase-table
+		.matrase-modal
 			// border: 1px solid red
-			// min-height: 300px
-			margin: 0 auto
-			.table-tr
-				// border: 1px solid green
-				// min-height: 40px
+			min-height: 100px
+			min-width: 50px
+			margin-top: 20px
+			padding: 10px
+			.row
 				display: flex
-				flex-flow: row nowrap
-				justify-content: space-between
-				align-items: center
-				%tr-td
-					box-sizing: border-box
-					border: 1px solid red
-					width: 20px
-					// min-height: 40px
-					padding: 15px
-				.tr-td_one
-					@extend %tr-td
-					width: 80%
-				.tr-td_two
-					@extend %tr-td
-					border: 1px solid blue
-					width: 20%
-
+				flex-flow: row wrap
+			.col
+				// border: 1px solid green
+				width: (1 / 2) * 100%
+				padding: 0 20px
+			.matrase-icon
+				// border: 1px solid green
+				display: block
+				height: 60px
+				// height: 150px
+				// width: 100px
+			.divan-one
+				background: url(../image/icons_Fur-01.png) no-repeat
+				background-size: cover
+				background-position: center center
+			.divan-two
+				background: url(../image/icons_Fur-02.png) no-repeat
+				background-size: cover
+				background-position: center center
+			.divan-three
+				background: url(../image/icons_Fur-03.png) no-repeat
+				background-size: cover
+				background-position: center center
+			.divan-four
+				background: url(../image/icons_Fur-04.png) no-repeat
+				background-size: cover
+				background-position: center center
+			.podushka
+				background: url(../image/icons_Fur-11.png) no-repeat
+				background-size: cover
+				background-position: center center
+			.mat-one
+				background: url(../image/icons_Fur-18.png) no-repeat
+				background-size: cover
+				background-position: center center
+			.mat-two
+				background: url(../image/icons_Fur-19.png) no-repeat
+				background-size: cover
+				background-position: center center
+			.mat-three
+				background: url(../image/icons_Fur-20.png) no-repeat
+				background-size: cover
+				background-position: center center
+			.stul-one
+				background: url(../image/icons_Fur-12.png) no-repeat
+				background-size: cover
+				background-position: center center
+			.stul-two
+				background: url(../image/icons_Fur-13.png) no-repeat
+				background-size: cover
+				background-position: center center
+			.stul-three
+				background: url(../image/icons_Fur-05.png) no-repeat
+				background-size: cover
+				background-position: center center
+			.stul-four
+				background: url(../image/icons_Fur-06.png) no-repeat
+				background-size: cover
+				background-position: center center
+			.stul-fife
+				background: url(../image/icons_Fur-07.png) no-repeat
+				background-size: cover
+				background-position: center center
+			.matrase-text
+				font-family: Arial, Helvetica, sans-serif
+				text-align: center
+				font-size: 12px
+				padding: 20px
+	.block
+		display: block
+		table
+			border-collapse: collapse
+			// border: 1px solid red
+			// width: 100%
+			margin: 0 auto
+			padding: 0 20px
+			caption
+				font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+				padding: 20px 8px
+				font-size: 1.8em
+			tr
+				// border: 1px solid green
+				// height: 40px
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+				background: #ddeada
+				font-size: 1em
+				&:nth-child(2n+1)
+					background: #e8dede
+				td
+					// border-left: 1px solid blue
+					padding: 10px 8px
+					&:first-child
+						border-left: 0
+						width: 75%
+	// .zakaz
+	// 	position: fixed
+	// 	top: 0
+	// 	left: 0
+	// 	background: rgba(0, 0, 0, 0.8)
+	// 	width: 100vw
+	// 	height: 100vh
+	// 	padding: 20px
+	// 	z-index: 100
+	// 	.zakaz-form
+	// 		// border: 1px solid red
+	// 		position: absolute
+	// 		top: 50%
+	// 		left: 50%
+	// 		transform: translate(-50%, -50%)
+			// width: 90%
+			// height: 100%
 +media(480px)
-	// .row:nth-child(2n+1)
-	// 	display: flex
-	// 	flex-flow: row-reverse
+	.main-port .matrase-content
+		width: 50vw
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		// height: 80vh
+		padding: 20px 40px
+		.row .col
+			width: (1/2) * 100%
+		table
+			width: 100%
++media(800px)
+	.main-port .matrase-content
+		width: 50vw
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		// height: 80vh
+		padding: 20px 40px
+		.row .col
+			width: (1/4) * 100%
+		table
+			width: 100%
+		

@@ -51,6 +51,8 @@ $effect-transition: #000
 $btn-hover: #000 
 $fon: rgba(0, 0, 0, 0.3)
 $header-text: #fff
+*
+	box-sizing: border-box
 h1,h2,h3,h4,h5,h6,p,ul,li
 	margin: 0
 	padding: 0
@@ -75,7 +77,7 @@ html, body
 .container
 	max-width: 1180px
 	margin: 0 auto
-	padding: 0 10px
+	padding: 0 40px
 	// position: relative
 	// z-index: 11
 	// border: 1px solid red
@@ -117,5 +119,19 @@ h3
 	font-size: 28px
 	text-transform: uppercase
 	margin: 15px 0
+ .form-btn
+	text-align: center
+	padding: 10px 0
+	button
+		display: inline-block
+		padding: 10px 20px
+		border: 1px solid #ccf
+		border-radius: 5px
+		font-family: "CircularStd-Bold", sans-serif
+		font-weight: normal
+		font-style: normal
+		font-size: 18px
+		background: blue
+		color: #fff
 
 
