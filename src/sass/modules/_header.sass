@@ -144,14 +144,14 @@
 				font-size: 16px
 				line-height: auto
 				text-transform: uppercase
-				color: #f9c645
+				color: #fff
 				padding: 15px 30px
 				border-radius: 30px
-				background: #000
+				background: rgba(249, 198, 69, 0.7)
 				margin-top: 40px
-				&:hover
-					background: #000
-					color: #f9c645
+				// &:hover
+				// 	background: #000
+				// 	color: #f9c645
 +media(480px)
 	.header
 		// perspective: 500px
@@ -204,7 +204,11 @@
 +media(800px)
 	.hamburger
 		display: none
-	.header 
+	.header
+		.header-head
+			// position: static
+		.header-logo
+			left: 0
 		.header-nav 
 			width: 800px
 			height: 50px
