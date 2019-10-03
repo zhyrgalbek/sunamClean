@@ -10,7 +10,7 @@ $(function(){
 	// 		$(this).find("a").removeClass("animated tada");
 	// 	})
 	// }
-	var $hamburger = $(".hamburger");
+	var $hamburger = $(".hamburger.menu");
 	var $nav = $(".nav");
 	$hamburger.on("click", function(){
 		$(this).toggleClass("is-active");
@@ -186,6 +186,18 @@ $(function(){
 		$(".main-form").addClass(".form-fixed");
 		// alert("Hello wotlf");
 	});
+	var setBool = false;
+	$(".hamburger.set").click(function(){
+		$(this).toggleClass("is-active");
+		if(setBool){
+			$(".set_blocks").css("height", "48px");
+			setBool = false;
+		} else {
+			$(".set_blocks").css("height", "300px");
+			setBool = true;			
+		}
+	});
+
 	/// end form
 
 });
