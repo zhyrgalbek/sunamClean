@@ -1,0 +1,22 @@
+.footer
+    background: #000
+    padding: 50px
+    color: #fff
+    .footer-content
+        display: flex
+        flex-flow: column nowrap
+        .footer-kompany, .footer-adress, .footer-soc-set, .footer-menedger
+            // border: 1px solid red
+            width: 250px
+            // height: 200px
+            margin-top: 40px
+            p
+                text-align: justify
+        .footer-kompany
+            margin-top: 0
++media(480px)
+    .footer .footer-content
+        display: flex
+        flex-flow: row nowrap
+        justify-content: space-between
+        align-items: center

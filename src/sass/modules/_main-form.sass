@@ -1,6 +1,32 @@
 .main-form
     background: $fon
     padding: 50px 0
+    .form-exit
+        display: none
+        .btn
+            position: absolute
+            top: 10px
+            right: 10px
+            background: transparent
+            width: 30px
+            height: 30px
+            border-radius: 50%
+            border: 1px solid #ccc
+            &:after, &:before
+                content: ""
+                display: block
+                position: absolute
+                top: 47%
+                left: 16%
+                width: 20px
+                height: 2px
+                background: #ccc
+                transform: translate(-50% , -50%)
+                border-radius: 10px
+            &:after
+                transform: rotate(-47deg)
+            &:before
+                transform: rotate(47deg)
     .form
         box-sizing: border-box
         // border: 1px solid red
@@ -64,8 +90,7 @@
                 color: #fff
 .form-fixed
     position: fixed
-    top: 0
-    left: 0
-    width: 100vw
-    height: 100vh
-    z-index: 100
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 101

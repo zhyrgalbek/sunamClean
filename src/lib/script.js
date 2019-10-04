@@ -197,6 +197,17 @@ $(function(){
 			setBool = true;			
 		}
 	});
+	$(".matrase-content .matrase-btn").click(function (){
+		$(this).parent().css("display", "none");
+		$("section.main-form").addClass("form-fixed");
+		$("section.main-form .form-exit").css("display", "block");
+		$("section.main-form .form-exit .btn").click(function(){
+			// $(".matrase").css("display", "none");
+			$(".matrase-content").css("display", "block");
+			$('section.main-form').removeClass("form-fixed");
+			$(this).parent().css("display", "none");
+		})
+	})
 
 	/// end form
 
