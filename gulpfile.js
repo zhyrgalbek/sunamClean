@@ -21,7 +21,8 @@ var path = {
 			"node_modules/jquery.maskedinput/src/jquery.maskedinput.js",
 			"node_modules/owl.carousel/dist/owl.carousel.js",
 			"node_modules/wow.js/dist/wow.min.js",
-			"./src/lib/*.js"
+			"./src/lib/script.js",
+			"lib/calc.js"
 		],
 		fonts: "./src/fonts/**/*.*"
 	},

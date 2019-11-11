@@ -29,21 +29,31 @@
                 transform: rotate(47deg)
     .form
         box-sizing: border-box
-        // border: 1px solid red
         display: flex
         margin: 0 auto
         max-width: 400px
-        background: #fff
-        flex-flow: column nowrap
-        padding: 50px 20px
+        background: #ccc
+        flex-flow: column wrap
+        padding: 30px 20px
+        padding-bottom: 20px
         h2
-            font-family: "CircularStd-Medium", sans-serif
+            font-family: 'IBM Plex Sans', sans-serif;
             font-weight: normal
             font-style: normal
             text-align: center
-            font-size: 28px
+            font-size: 34px
             margin: 0
-            padding: 0 0 30px 0
+            padding: 0 0 0px 0
+        h3 
+            font-family: 'Comfortaa', cursive;
+            font-weight: 600
+            margin: 0
+            // padding-top: 15px
+            // padding-bottom: 15px
+            // padding-right: 50px
+            // padding-left: 10px
+            font-size: 18px
+            text-align: center
         .form-div
             display: flex
             // flex-flow: row nowrap
@@ -82,15 +92,36 @@
                 padding: 10px 20px
                 border: 1px solid #ccf
                 border-radius: 5px
-                font-family: "CircularStd-Bold", sans-serif
+                font-family: 'IBM Plex Sans', sans-serif;
+                // font-family: "CircularStd-Bold", sans-serif
                 font-weight: normal
                 font-style: normal
                 font-size: 18px
                 background: blue
                 color: #fff
+        .form-text
+            font-family: 'Josefin Sans', sans-serif;
+            text-align: center
+            // padding-right: 30px
+            // padding-top: 30px
+            color: #B7BABC
+            font-weight: 600
+            .form-text-bg
+                font-family: 'Josefin Sans', sans-serif;
+                color: #25AFCA
+                font-weight: 600
+
 .form-fixed
     position: fixed
     top: 50%
     left: 50%
     transform: translate(-50%, -50%)
     z-index: 101
+@media screen and (max-width: 480px)
+     .form
+        h2
+            font-size: 8px
+            color: green
+            padding: 0
+            margin: 0
+        h3

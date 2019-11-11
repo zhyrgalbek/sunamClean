@@ -1,34 +1,41 @@
 .main-calc
 	padding-bottom: 50px
-	.stul
-		border: 1px solid green
-		max-width: 242px
-		margin: 0 auto
-		// height: 200px
-		padding: 10px
-		border-radius: 10px
-		.total
-			box-sizing: border-box
-			height: 40px
-			width: 100%
-			font-size: 18px
-			font-family: sans-serif
-			padding: 10px 10px
-			border: 1px solid #ccc
-		.buttons
-			// border: 1px solid red
+	.container
+		// border: 1px solid red
+	#app
+		.app-calc
 			display: flex
-			flex-flow: row wrap
 			justify-content: space-between
-		.calc-btn
-			padding: 10px 20px
-			width: 60px
-			height: 50px
-	.calc-div
-		border: 1px solid red
-		max-width: 400px
-		padding: 20px
-		margin: 40px auto
-		#divan-result, #stul-result, #itog
-			// border: 1px solid red
-			padding: 20px
+			flex-flow: row wrap
+			align-items: space-between
+			font-size: 16px
+			position: relative
+			.itog
+				position: absolute
+				top: 100%
+				left: 50%
+				transform: translateX(-50%)
+			div
+				padding-top: 20px
+				padding-bottom: 20px
+				background: #fff
+				// border: 1px solid red
+				width: 300px
+				border-radius: 5px
+				display: flex
+				margin-bottom: 20px
+				flex-flow: column nowrap
+				justify-content: center
+				align-items: center
+				.h2
+					font-size: 22px
+				p
+					font-size: 16px
+					color: #000
+				.range
+					width: 150px
+				input
+					width: 50px
+				img
+					width: 150px
+					// border: 1px solid red
