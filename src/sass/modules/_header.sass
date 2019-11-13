@@ -1,10 +1,31 @@
+.dannye
+	display: flex
+	flex-flow: column wrap
+	justify-content: space-between
+	align-items: center
+	max-width: 1180px
+	margin: 0 auto
+	padding: 25px 0
+	+media(500px)
+		flex-flow: row wrap
+		justify-content: space-around
+	.my-phone
+	    a
+	    	text-decoration: none
+	    	font-size: 1.2rem
+		    line-height: 2.75rem
+		    text-transform: uppercase
+		    // font-family: Montserrat,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
+		    font-weight: 700
+		    text-align: center
+		    color: #2c3e50
 .black
 	color: #fff
 .header
 	background: #136cf8 
-	background: url(../image/photo_2019-09-08_21-11-48.jpg) no-repeat
+	background: url(../image/16251.jpg) no-repeat
 	background-size: cover
-	background-position: bottom center
+	background-position: top center
 	// filter: saturate(45%)
 	height: 100vh
 	position: relative
@@ -98,6 +119,7 @@
 						padding: 10px 20px
 						// background: blue
 						transition-duration: 0.2s
+						cursor: pointer
 		.left
 			left: 0px
 	.header-text
@@ -114,39 +136,38 @@
 		justify-content: center
 		z-index: 12
 		.h2
-			font:
-				family: "CircularStd-Bold"
-				weight: normal
-				style: normal
-			font-size: 2.5rem
-			line-height: 1.5
-			text-align: center
-			color: $header-text
+		    font-size: 2.75rem
+		    line-height: 2.75rem
+		    text-transform: uppercase
+		    font-family: Montserrat,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
+		    font-weight: 700
+		    text-align: center
+		    color: #fff
 		.p
-			font:
-				family: "CircularStd-Book",sans-serif
-				weight: normal
-				style: normal
-			font-size: 21px
-			line-height: 34px
+			padding-top: 50px
+			font-family: Lato,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
+			line-height: 1.5
+			font-size: 1.25rem
+			font-weight: 300
 			color: #fff
 			text-align: center
-			margin-top: 35px
 		.btn
 			display: block
 			text-align: center
 			a
+				padding: 1rem 1.75rem
+			    font-size: 1.25rem
+			    line-height: 1.5
 				display: inline-block
-				font-family: "CircularStd-Book", sans-serif
+				font-family: Lato,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
 				font-weight: 400
+				vertical-align: middle
 				font-style: normal
 				text-decoration: none
-				font-size: 16px
 				line-height: auto
 				text-transform: uppercase
 				color: #fff
-				padding: 15px 30px
-				border-radius: 5px
+				border-radius: .5rem
 				background: rgba(249, 198, 69, 0.7)
 				margin-top: 40px
 				// &:hover

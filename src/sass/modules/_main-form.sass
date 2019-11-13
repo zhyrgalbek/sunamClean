@@ -1,6 +1,6 @@
 .main-form
-    background: $fon
-    padding: 50px 0
+    background: #fff
+    padding: 30px 0
     .form-exit
         display: none
         .btn
@@ -31,29 +31,27 @@
         box-sizing: border-box
         display: flex
         margin: 0 auto
-        max-width: 400px
-        background: #ccc
+        // max-width: 400px
+        background: #fff
         flex-flow: column wrap
-        padding: 30px 20px
+        padding: 10px
         padding-bottom: 20px
         h2
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-weight: normal
-            font-style: normal
+            font-family: Montserrat,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
+            font-weight: 700
+            font-size: 2rem
+            line-height: 2rem
             text-align: center
-            font-size: 34px
-            margin: 0
-            padding: 0 0 0px 0
+            padding-bottom: 35px
+            color: #2c3e50
+            text-transform: uppercase
         h3 
-            font-family: 'Comfortaa', cursive;
+            font-family: Montserrat,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
             font-weight: 600
             margin: 0
-            // padding-top: 15px
-            // padding-bottom: 15px
-            // padding-right: 50px
-            // padding-left: 10px
             font-size: 18px
             text-align: center
+            padding-bottom: 30px
         .form-div
             display: flex
             // flex-flow: row nowrap
@@ -61,23 +59,19 @@
             // align-items: center
             flex-flow: column nowrap
             // border: 1px solid red
-            padding: 10px 20px
+            padding: 10px 0px
             input
                 font-family: "CircularStd-Bold", sans-serif
                 font-weight: normal
                 font-style: normal
-                // font-size: 18px
-                // padding: 10px
-                // background: #ccc
-                // border: 1px solid #ccf
-                // border-radius: 5px
-                font-size: 16px
-                padding: 4px 8px
+                font-size: 1rem
+                padding: 10px 8px
                 line-height: 1.5
                 border-radius: 4px
                 border: 1px solid #ccc
                 box-shadow: inset 0 1px 1px rgba(0,0,0,0.075)
                 transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+                width: 100%
                 &:focus
                     border-color: #66afe9
                     outline: 0
@@ -92,22 +86,22 @@
                 padding: 10px 20px
                 border: 1px solid #ccf
                 border-radius: 5px
-                font-family: 'IBM Plex Sans', sans-serif;
-                // font-family: "CircularStd-Bold", sans-serif
-                font-weight: normal
-                font-style: normal
-                font-size: 18px
-                background: blue
+                font-family: Lato,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
+                font-size: 1rem
+                line-height: 1.5
+                text-transform: uppercase
+                background: #2c3e50
                 color: #fff
+                width: 100%
         .form-text
-            font-family: 'Josefin Sans', sans-serif;
+            font-family: Lato,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
+            line-height: 1.5
+            font-size: 0.9rem
+            font-weight: 300
+            color: #000
             text-align: center
-            // padding-right: 30px
-            // padding-top: 30px
-            color: #B7BABC
-            font-weight: 600
             .form-text-bg
-                font-family: 'Josefin Sans', sans-serif;
+                // font-family: 'Josefin Sans', sans-serif;
                 color: #25AFCA
                 font-weight: 600
 
@@ -116,12 +110,9 @@
     top: 50%
     left: 50%
     transform: translate(-50%, -50%)
+    width: 350px
     z-index: 101
-@media screen and (max-width: 480px)
-     .form
-        h2
-            font-size: 8px
-            color: green
-            padding: 0
-            margin: 0
-        h3
++media(600px)
+    .main-form
+        .form
+            max-width: 500px

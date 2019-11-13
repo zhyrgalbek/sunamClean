@@ -5,12 +5,14 @@
 		// border: 1px solid red
 		overflow: visible
 	h2
-		font:
-			family: "CircularStd-Bold", sans-serif
-			weight: normal
-			style: normal
-		font-size: 35px
+		font-family: Montserrat,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
+		font-weight: 700
+		font-size: 2.25rem
+		line-height: 3rem
 		text-align: center
+		text-transform: uppercase
+		padding: 50px 0
+		color: #2c3e50
 	.main-text
 		border: 1px solid #F9C645
 		padding: 20px
@@ -22,22 +24,33 @@
 			position: absolute
 			bottom: 50px
 			left: 50%
+			padding: 0.5rem 1.75rem
+			font-size: 1.25rem
+			line-height: 1.5
+			display: inline-block
+			font-family: Lato,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
+			font-weight: 600
 			transform: translateX(-50%)
 			cursor: pointer
-			// border: 1px solid red
-			color: green
-			background: rgba(249, 198, 69, 1)
-			padding: 10px 20px
+			color: #fff
+			background: #2c3e50
+			// padding: 10px 20px
 			border-radius: 5px
 			transition-duration: 0.2s
 			+media(800px)
 				left: -50%
 		h3
+			font:
+				family: Montserrat,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
+				weight: 700
+			line-height: 1.2
+			text-transform: uppercase
+			margin: 15px 0
 			padding-bottom: 30px
 			text-align: center
 			color: #fff
 			background: rgba(249, 198, 69, 0.7)
-			padding: 10px 0
+			padding: 1rem 1.75rem
 			border-radius: 10px
 		+media(800px)
 			&:hover
@@ -145,8 +158,13 @@
 					background: blue
 					color: #fff
 		.matrase-zag
-			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-			// text-transform: capitalize
+			font:
+				family: Montserrat,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
+				weight: 700
+			line-height: 1.2
+			font-size: 1.9rem
+			text-transform: uppercase
+			color: #2c3e50
 			margin: 20px 0
 			padding: 0
 		.matrase-tema
@@ -231,10 +249,15 @@
 				background-size: cover
 				background-position: center center
 			.matrase-text
-				font-family: Arial, Helvetica, sans-serif
-				text-align: center
-				font-size: 12px
-				padding: 20px
+				font-family: "Lato","-apple-system","BlinkMacSystemFont","Segoe UI","Roboto","Helvetica Neue","Arial","Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
+			   	line-height: 1.5
+			    font-size: 1.25rem
+			    font-weight: 300
+			    color: #000
+			    text-align: justify
+				padding: 20px 0
+				.cena
+					color: #1abc9c
 	.block
 		display: block
 		table
